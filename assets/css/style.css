@@ -330,6 +330,10 @@ body{
 	font-size:30px;
 	width:384px;
 }
+.menumobile {
+	display:none;
+}
+
 
 @media only screen and (min-width: 906px) and (max-width: 1057px) {
 
@@ -339,6 +343,9 @@ body{
 	.ultimasnoticiasint,
 	.containerint {
 		max-width: 890px;
+	}
+	#menu {
+		display:block !important;
 	}
 	.leftside {
 		width:600px;
@@ -370,6 +377,10 @@ body{
 	.topo2 .banner{
 		display:none;
 	}
+	#menu {
+		display:block !important;
+	}
+
 	.logo {
 		float:none;
 		margin:auto;
@@ -420,8 +431,26 @@ body{
 		margin:auto;
 	}
 	.menuint{
+		
+	}
+	.menu ul {
+		position:absolute;
+		background-color: red;
+		z-index: 10;
+		display: none;
+	}
+	.menu li {
+		float:none;
+		height:auto;
+	}
+	.menu li img {
 		display:none;
 	}
+	.submenu {
+		position:static;
+		display:block;
+	}
+
 	.ultimasnoticias{
 		display: none;
 	}
@@ -466,5 +495,8 @@ body{
 	.noticiainfo {
 		width:206px;
 	}
+	.menumobile {
+	display:block;
+    }
 	
 }
